@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.PriorityQueue;
+
 /**
  * @Author tjy
  * @Date 2020/4/8 20:54
@@ -13,6 +16,7 @@ public class test {
         int[] a={1,5,2,5,3};
         String s = myToString(a);
         System.out.println(s);
+
     }
 
     public static String myToString(int[] arr){
@@ -26,5 +30,27 @@ public class test {
 
         }
         return s;
+    }
+
+    public static int Fibonacci(int n) {
+        if(n==1||n==2)return 1;
+        return Fibonacci(n-1)+Fibonacci(n-2);
+    }
+
+    public static int[] arrayCopy(int[] array){
+        int[] copy=new int[array.length];
+        for (int x=0;x < array.length; x++){
+            copy[x]=array[x];
+        }
+        return copy;
+    }
+
+    public static int findMax(int[] array){
+        int max=0;
+        for (int x =0;x <array.length; x++){
+            max=Math.max(max,array[x]);
+        }
+        return max;
+
     }
 }
