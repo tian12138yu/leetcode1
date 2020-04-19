@@ -1,4 +1,4 @@
-package com.offer;
+package com.leetcode;
 
 /**
  * @Author tjy
@@ -31,5 +31,9 @@ public class manTo {
 
         return res[x][y];
     }
+
+
+
+
 
 }
