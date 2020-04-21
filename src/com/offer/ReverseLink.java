@@ -29,6 +29,11 @@ public class ReverseLink {
         return root;
     }
 
+    /**
+     * 递归实现
+     * @param head
+     * @return
+     */
     public static ListNode reverse(ListNode head){
         if (head.next == null){
             root = head;
@@ -40,12 +45,32 @@ public class ReverseLink {
         return head;
     }
 
+    /**
+     * 迭代实现
+     * @param node
+     * @return
+     */
+    public static ListNode rever(ListNode node){
+        ListNode pre,aft;
+        pre = node;
+        aft = node.next;
+        node.next = null;
+        node = aft;
+        while (node != null){
+            aft = node.next;
+            node.next = pre;
+            pre = node;
+            node = aft;
+        }
+        return pre;
+    }
+
     public static void main(String[] args) {
-        ListNode root1=new ListNode(1);
-        root1.next=new ListNode(4);
-        root1.next.next=new ListNode(5);
-        root1.next.next.next=null;
-        ListNode listNode = ReverseList(root1);
+        ListNode root1 = new ListNode(1);
+        root1.next = new ListNode(4);
+        root1.next.next = new ListNode(5);
+        root1.next.next.next = null;
+        ListNode listNode = rever(root1);
         while (listNode != null){
             System.out.print(listNode.val+ "->");
             listNode = listNode.next;
