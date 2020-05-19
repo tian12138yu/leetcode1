@@ -1,3 +1,5 @@
+import com.leetcode.TreeNode;
+import com.leetcode.code105;
 import com.leetcode.code114;
 
 import java.util.HashMap;
@@ -15,10 +17,24 @@ public class test {
 ////        byte c=10;
 //////        byte d=b+c;小于四个字节的进行运算时，会先提升到INT进行运算。
 //////        System.out.println(b+c);
-        int[] a={1,5,2,5,3};
-        String s = myToString(a);
-        System.out.println(s);
+//        int[] a={1,5,2,5,3};
+//        String s = myToString(a);
+//        System.out.println(s);
+        int[] a = {3,9,20,15,7};
+        int[] b = {9,3,15,20,7};
+        code105 code105 = new code105();
+        TreeNode treeNode = code105.buildTree(a, b);
+        preOrderTraversal(treeNode);
 
+    }
+
+    static void preOrderTraversal(TreeNode root){
+        if(root == null) {
+            return;
+        }
+        System.out.print(root.val+" ");
+        preOrderTraversal(root.left);
+        preOrderTraversal(root.right);
     }
 
     public static String myToString(int[] arr){

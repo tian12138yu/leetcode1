@@ -22,6 +22,7 @@ public class TreeToLinked {
         }
 
     }
+
     TreeNode root;
     TreeNode pre;
     public TreeNode Convert(TreeNode pRootOfTree) {
@@ -30,10 +31,9 @@ public class TreeToLinked {
         if (root == null){
             root = pRootOfTree;
         }
-        if (pre !=null){
-            pRootOfTree.left = pre;
+        pRootOfTree.left = pre;
+        if (pre != null){
             pre.right = pRootOfTree;
-
         }
         pre = pRootOfTree;
         Convert(pRootOfTree.right);
