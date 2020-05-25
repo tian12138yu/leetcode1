@@ -1,7 +1,9 @@
 import com.leetcode.TreeNode;
 import com.leetcode.code105;
 import com.leetcode.code114;
+import com.offer.PathOfTree;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
@@ -11,6 +13,7 @@ import java.util.PriorityQueue;
  */
 
 public class test {
+
     public static void main(String[] args) {
 //        int a=Integer.MAX_VALUE+1;
 ////        byte b=20;
@@ -20,11 +23,20 @@ public class test {
 //        int[] a={1,5,2,5,3};
 //        String s = myToString(a);
 //        System.out.println(s);
-        int[] a = {3,9,20,15,7};
-        int[] b = {9,3,15,20,7};
-        code105 code105 = new code105();
-        TreeNode treeNode = code105.buildTree(a, b);
-        preOrderTraversal(treeNode);
+        //10,5,12,4,7
+        TreeNode root = new TreeNode(10);
+        TreeNode root1 = new TreeNode(5);
+        TreeNode root2 = new TreeNode(12);
+        TreeNode root3 = new TreeNode(4);
+        TreeNode root4 = new TreeNode(7);
+        root.left = root1;
+        root.right = root2;
+        root1.left = root3;
+        root1.right = root4;
+
+
+        ArrayList<ArrayList<Integer>> arrayLists = new PathOfTree().FindPath(root, 22);
+        System.out.println(arrayLists);
 
     }
 
