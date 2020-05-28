@@ -11,7 +11,6 @@ import java.util.List;
 
 public class mianshi38 {
 
-    class Solution {
         List<String> res = new LinkedList<>();
         char[] c;
         public String[] permutation(String s) {
@@ -40,5 +39,4 @@ public class mianshi38 {
             c[a] = c[b];
             c[b] = tmp;
         }
-    }
 }
