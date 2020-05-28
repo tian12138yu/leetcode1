@@ -55,4 +55,22 @@ public class code138 {
         }
         return head;
     }
+
+    public Node copyRandomList1(Node head) {
+        if (head == null)return head;
+        Node cur = head;
+        Map<Node, Node> map = new HashMap<>();
+        while (cur != null) {
+            Node node = new Node(cur.val);
+            map.put(cur,node);
+            cur = cur.next;
+        }
+        cur = head;
+        while(cur != null){
+            map.get(cur).next = map.get(cur.next);
+            map.get(cur).random = map.get(cur.random);
+            cur = cur.next;
+        }
+        return map.get(head);
+    }
 }
