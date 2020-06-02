@@ -1,7 +1,4 @@
-import com.leetcode.TreeNode;
-import com.leetcode.code105;
-import com.leetcode.code114;
-import com.leetcode.code3;
+import com.leetcode.*;
 import com.offer.PathOfTree;
 
 import java.util.ArrayList;
@@ -45,8 +42,9 @@ public class test {
 //        System.out.println(c1);
 //        System.out.println(Math.round(11.5));
 //        System.out.println(Math.round(-11.5));
-        System.out.println(new code3().lengthOfLongestSubstring("cdd"));
-
+//        System.out.println(new code3().lengthOfLongestSubstring("cdd"));
+        String[] a = {};
+        System.out.println(new code819().mostCommonWord("Bob", a));
 
     }
 
