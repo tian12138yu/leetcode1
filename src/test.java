@@ -1,6 +1,7 @@
 import com.leetcode.TreeNode;
 import com.leetcode.code105;
 import com.leetcode.code114;
+import com.leetcode.code3;
 import com.offer.PathOfTree;
 
 import java.util.ArrayList;
@@ -37,14 +38,14 @@ public class test {
 //
 //        ArrayList<ArrayList<Integer>> arrayLists = new PathOfTree().FindPath(root, 22);
 //        System.out.println(arrayLists);
-        char c = ' ';
-        char a = 'a';
-        int a1 = c ^ a;
-        char c1 = ('A' + 32);
-        System.out.println(c1);
-        System.out.println(Math.round(11.5));
-        System.out.println(Math.round(-11.5));
-
+//        char c = ' ';
+//        char a = 'a';
+//        int a1 = c ^ a;
+//        char c1 = ('A' + 32);
+//        System.out.println(c1);
+//        System.out.println(Math.round(11.5));
+//        System.out.println(Math.round(-11.5));
+        System.out.println(new code3().lengthOfLongestSubstring("cdd"));
 
 
     }
