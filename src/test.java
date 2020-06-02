@@ -24,19 +24,28 @@ public class test {
 //        String s = myToString(a);
 //        System.out.println(s);
         //10,5,12,4,7
-        TreeNode root = new TreeNode(10);
-        TreeNode root1 = new TreeNode(5);
-        TreeNode root2 = new TreeNode(12);
-        TreeNode root3 = new TreeNode(4);
-        TreeNode root4 = new TreeNode(7);
-        root.left = root1;
-        root.right = root2;
-        root1.left = root3;
-        root1.right = root4;
+//        TreeNode root = new TreeNode(10);
+//        TreeNode root1 = new TreeNode(5);
+//        TreeNode root2 = new TreeNode(12);
+//        TreeNode root3 = new TreeNode(4);
+//        TreeNode root4 = new TreeNode(7);
+//        root.left = root1;
+//        root.right = root2;
+//        root1.left = root3;
+//        root1.right = root4;
+//
+//
+//        ArrayList<ArrayList<Integer>> arrayLists = new PathOfTree().FindPath(root, 22);
+//        System.out.println(arrayLists);
+        char c = ' ';
+        char a = 'a';
+        int a1 = c ^ a;
+        char c1 = ('A' + 32);
+        System.out.println(c1);
+        System.out.println(Math.round(11.5));
+        System.out.println(Math.round(-11.5));
 
 
-        ArrayList<ArrayList<Integer>> arrayLists = new PathOfTree().FindPath(root, 22);
-        System.out.println(arrayLists);
 
     }
 
