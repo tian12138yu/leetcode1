@@ -6,7 +6,6 @@ package com.leetcode;
  */
 
 public class code705 {
-
     /** Initialize your data structure here. */
     boolean[] map = new boolean[1000005];
     public void MyHashSet() {

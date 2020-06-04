@@ -43,8 +43,10 @@ public class test {
 //        System.out.println(Math.round(11.5));
 //        System.out.println(Math.round(-11.5));
 //        System.out.println(new code3().lengthOfLongestSubstring("cdd"));
-        String[] a = {};
-        System.out.println(new code819().mostCommonWord("Bob", a));
+//        String[] a = {};
+//        System.out.println(new code819().mostCommonWord("Bob", a));
+        int[] a = {1,2,3,4};
+        System.out.println(new code949().largestTimeFromDigits(a));
 
     }
 
