@@ -1,9 +1,7 @@
 import com.leetcode.*;
 import com.offer.PathOfTree;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.PriorityQueue;
+import java.util.*;
 
 /**
  * @Author tjy
@@ -12,7 +10,7 @@ import java.util.PriorityQueue;
 
 public class test {
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
 //        int a=Integer.MAX_VALUE+1;
 ////        byte b=20;
 ////        byte c=10;
@@ -48,6 +46,23 @@ public class test {
         int[] a = {1,2,3,4};
         System.out.println(new code949().largestTimeFromDigits(a));
 
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Integer> integers = new ArrayList<>();
+        ArrayList<Integer> integers1 = new ArrayList<>();
+        List<List<Integer>> als = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            integers.add(i);
+
+        }
+        for (int i = 9; i >= 0; i--) {
+            integers1.add(i);
+        }
+        als.add(integers);
+        Collections.sort(integers1);
+
+        System.out.println(als.contains(integers1));
     }
 
     static void preOrderTraversal(TreeNode root){
