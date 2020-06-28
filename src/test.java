@@ -48,7 +48,7 @@ public class test {
 
     }
 
-    public static void main(String[] args) {
+    public static void main2(String[] args) {
         ArrayList<Integer> integers = new ArrayList<>();
         ArrayList<Integer> integers1 = new ArrayList<>();
         List<List<Integer>> als = new ArrayList<>();
@@ -107,5 +107,25 @@ public class test {
         }
         return max;
 
+    }
+
+    public static void main(String[] args) {
+        boolean a = false;
+        String s = "";
+        try {
+            s = "+";
+            System.out.println(Integer.parseInt(s));
+        }catch (NumberFormatException e ){
+            a = true;
+        }finally {
+            if (a){
+                if (s.charAt(0) == '-'){
+                    System.out.println(Integer.MIN_VALUE);
+                }else {
+                    System.out.println(Integer.MAX_VALUE);
+                }
+            }
+        }
+//        System.out.println(Integer.parseInt(s));
     }
 }
